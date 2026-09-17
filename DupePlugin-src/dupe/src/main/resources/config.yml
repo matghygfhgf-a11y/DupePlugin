@@ -1,0 +1,17 @@
+# Ile sekund gracz musi czekac miedzy kopiowaniami (0 = brak cooldownu)
+cooldown-sekundy: 3
+
+# Maksymalna ilosc sztuk na jedna komende (np. /dupe 64)
+# Gracze z permisja dupe.bypass moga wiecej (do 2304 = 36 stackow)
+max-ilosc: 64
+
+# false = kazdy moze uzywac /dupe
+# true  = tylko gracze z permisja dupe.use
+wymagaj-permisji: false
+
+# Przedmioty, ktorych nie da sie skopiowac
+zabronione-przedmioty:
+  - BEDROCK
+  - COMMAND_BLOCK
+  - BARRIER
+  - STRUCTURE_BLOCK

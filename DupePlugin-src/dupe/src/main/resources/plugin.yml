@@ -1,0 +1,23 @@
+name: DupePlugin
+version: '${project.version}'
+main: pl.serwer.dupe.DupePlugin
+api-version: '1.21'
+author: serwer
+description: Kopiowanie przedmiotu trzymanego w rece.
+
+commands:
+  dupe:
+    description: Kopiuje przedmiot trzymany w rece.
+    usage: /dupe [ilosc] - np. /dupe 16
+    aliases: [kopiuj, duplikuj]
+
+permissions:
+  dupe.use:
+    description: Pozwala uzywac /dupe (dziala tylko gdy wymagaj-permisji = true).
+    default: true
+  dupe.bypass:
+    description: Omija cooldown.
+    default: op
+  dupe.admin:
+    description: Pozwala na /dupe reload.
+    default: op
